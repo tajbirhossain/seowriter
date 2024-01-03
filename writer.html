@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <aside>
+        <div class="modeToggle">
+            <p>Dark</p>
+            <div class="modeSwitch">
+                <input type="checkbox" name="modeInp" id="modeInp">
+                <label for="modeInp"></label>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="assets/images/Home.svg" alt="">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <img src="assets/images/chat-active.svg" alt="">
+                    <span>Chat SEOAI</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/Edit.svg" alt="">
+                    <span>SuperWriter SEOAI</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/Wallet.svg" alt="">
+                    <span>Super Price</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/login.svg" alt="">
+                    <span>Login</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/Add User.svg" alt="">
+                    <span>Register</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+
+    <main>
+        <div class="container">
+            <div class="mainTopWrap chatMainTop">
+                <div class="mainHeading">
+                    <img src="assets/images/flash.svg" alt="">
+                    <span>SEO<span>AI</span></span>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="pageTitle">
+                    <h1>
+                        SuperWriter SEOAI
+                        <img src="assets/images/smile.svg" class="smileImg" alt="">
+                    </h1>
+                    <h2>Powered by GPT-4 Turbo, GPT-3.5, and Claude! </h2>
+                    <p>The best editing writing system, with several AI models for you</p>
+                </div>
+            </div>
+
+            <div class="writerContent">
+                <div class="writerItemWrap">
+                    <div class="itemHeading">
+                        <div class="itemHeadingTop">
+                            <img src="assets/images/alert.svg" alt="">
+                            <h3>AI Model</h3>
+                        </div>
+                        <p>
+                            Claude, Gemini, Llma and GPT-4 is only available to paid users. It can result in much higher
+                            quality and unique articles
+                        </p>
+                    </div>
+                    <div class="writerBtnWrap writerBtnWrap2">
+                        <button class="active">GPT 3.5</button>
+                        <button>GPT 4.5 Turbo</button>
+                        <button>Gemini 1.1</button>
+                        <button>Claude 3.1</button>
+                        <button>Llma V.15</button>
+                    </div>
+                </div>
+
+                <div class="writerItemWrap">
+                    <div class="itemHeading">
+                        <h3>Article Topic</h3>
+                    </div>
+                    <div class="writerInp">
+                        <input type="text"
+                            placeholder="Write here about what you want to receive the content of the article">
+                    </div>
+                </div>
+
+
+                <div class="writerItemWrap">
+                    <div class="itemHeading">
+                        <div class="itemHeadingTop">
+                            <img src="assets/images/alert.svg" alt="">
+                            <h3>SEO Optimization</h3>
+                        </div>
+                        <p>
+                            SEO Optimization with AI is exclusive to premium subscribers, due to its intensive analytics
+                            of web pages per article. For a complete experience, it is recommended to try SuperWriter
+                            together with Claude, Gemini, Llama or GPT-4 Turbo
+                        </p>
+                    </div>
+                    <div class="writerBtnWrap writerBtnWrap2">
+                        <button class="active">Basic</button>
+                        <button>Advanced</button>
+                        <button>Super + AI</button>
+                    </div>
+                </div>
+
+
+                <div class="writerMultiInp">
+                    <div class="writerInpRow">
+                        <div class="writerItemWrap">
+                            <div class="itemHeading">
+                                <h3>Article Type</h3>
+                            </div>
+                            <div class="custom-select customSelect">
+                                <div class="select-styled">Blog Post</div>
+                                <ul class="select-options">
+                                    <li class="select-option" data-value="Blog Post">Blog Post</li>
+                                    <li class="select-option" data-value="Blog Post">Blog Post</li>
+                                    <li class="select-option" data-value="Blog Post">Blog Post</li>
+                                    <li class="select-option" data-value="Blog Post2">Blog Post 2</li>
+                                </ul>
+                                <select>
+                                    <option value="Blog Post">Blog Post</option>
+                                    <option value="Blog Post">Blog Post</option>
+                                    <option value="Blog Post">Blog Post</option>
+                                    <option value="Blog Post2">Blog Post 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="writerItemWrap">
+                            <div class="itemHeading">
+                                <h3>Targeted Keyword</h3>
+                            </div>
+                            <div class="writerInp">
+                                <input type="text" placeholder="List keywords separated by comma. Recommended 5">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="writerInpRow">
+                        <div class="writerItemWrap">
+                            <div class="itemHeading seoHeading">
+                                <h3>
+                                    Tone of Voice
+                                </h3>
+                            </div>
+                            <div class="custom-select customSelect">
+                                <div class="select-styled">SEO Optimized (Confident, Knowledgeable, Neutral, and Clear )
+                                </div>
+                                <ul class="select-options">
+                                    <li class="select-option"
+                                        data-value="SEO Optimized (Confident, Knowledgeable, Neutral, and Clear )">SEO
+                                        Optimized
+                                        (Confident, Knowledgeable, Neutral, and Clear )</li>
+                                    <li class="select-option" data-value="Another option">Another option</li>
+                                    <li class="select-option" data-value="Another option">Another option</li>
+                                    <li class="select-option" data-value="Another option2">Another option</li>
+                                </ul>
+                                <select>
+                                    <option value="SEO Optimized (Confident, Knowledgeable, Neutral, and Clear )">SEO
+                                        Optimized
+                                        (Confident, Knowledgeable, Neutral, and Clear )</option>
+                                    <option value="Another option">Another option</option>
+                                    <option value="Another option">Another option</option>
+                                    <option value="Another option2">Another option 2</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="writerItemWrap">
+                            <div class="itemHeading seoHeading">
+                                <h3>Country</h3>
+                            </div>
+                            <div class="custom-select customSelect">
+                                <div class="select-styled">-Automatic</div>
+                                <ul class="select-options">
+                                    <li class="select-option" data-value="Automatic">-Automatic</li>
+                                    <li class="select-option" data-value="Another option">Another option</li>
+                                    <li class="select-option" data-value="Another option">Another option</li>
+                                    <li class="select-option" data-value="Another option2">Another option</li>
+                                </ul>
+                                <select>
+                                    <option value="Automatic">-Automatic</option>
+                                    <option value="Another option">Another option</option>
+                                    <option value="Another option">Another option</option>
+                                    <option value="Another option2">Another option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="writerInpRow">
+                        <div class="writerItemWrap">
+                            <div class="itemHeading seoHeading">
+                                <h3>
+                                    Point of View
+                                </h3>
+                            </div>
+                            <div class="custom-select customSelect">
+                                <div class="select-styled">Third Person (he, she, it, they)</div>
+                                <ul class="select-options">
+                                    <li class="select-option" data-value="Third Person (he, she, it, they)">Third Person
+                                        (he,
+                                        she,
+                                        it, they)</li>
+                                    <li class="select-option" data-value="Another option">Another option</li>
+                                    <li class="select-option" data-value="Another option">Another option</li>
+                                    <li class="select-option" data-value="Another option2">Another option</li>
+                                </ul>
+                                <select>
+                                    <option value="Third Person (he, she, it, they)">Third Person (he, she, it, they)
+                                    </option>
+                                    <option value="Another option">Another option</option>
+                                    <option value="Another option">Another option</option>
+                                    <option value="Another option2">Another option 2</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="writerItemWrap">
+                            <div class="itemHeading seoHeading">
+                                <h3>
+                                    Article Length
+                                    <img src="assets/images/Information Circle.svg" alt="">
+                                </h3>
+                            </div>
+                            <div class="custom-select customSelect">
+                                <div class="select-styled">Default</div>
+                                <ul class="select-options">
+                                    <li class="select-option" data-value="Default">Default</li>
+                                    <li class="select-option" data-value="Another option">Another option</li>
+                                    <li class="select-option" data-value="Another option">Another option</li>
+                                    <li class="select-option" data-value="Another option2">Another option</li>
+                                </ul>
+                                <select>
+                                    <option value="Default">Default</option>
+                                    <option value="Another option">Another option</option>
+                                    <option value="Another option">Another option</option>
+                                    <option value="Another option2">Another option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="writerItemWrap">
+                    <div class="itemHeading seoHeading">
+                        <h3>
+                            AI Images & YouTube Videos
+                            <img src="assets/images/Information Circle.svg" alt="">
+                        </h3>
+                    </div>
+                    <div class="writerBtnWrap writerBtnWrap2">
+                        <button class="active">None</button>
+                        <button>Auto</button>
+                        <button>Images</button>
+                        <button>Videos</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="writerToggleWrap">
+                    <div class="singleWriterToggleWrap">
+                        <div class="singleWriterToggle">
+                            <div class="realToggle">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="realtoggleAdv">Show Advanced Options</span>
+                            </div>
+                        </div>
+                        <div class="singleWriterToggle">
+                            <div class="realToggle">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>Include FAQ Section</span>
+                            </div>
+                            <img src="assets/images/Information Circle.svg" alt="">
+                        </div>
+                        <div class="singleWriterToggle">
+                            <div class="realToggle">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>Include Key Takeaways</span>
+                            </div>
+                            <img src="assets/images/Information Circle.svg" alt="">
+                        </div>
+                        <div class="singleWriterToggle">
+                            <div class="realToggle">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>Use Real-Time Data</span>
+                            </div>
+                            <img src="assets/images/Information Circle.svg" alt="">
+                        </div>
+                        <div class="singleWriterToggle">
+                            <div class="realToggle">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>Use Outline Editor</span>
+                            </div>
+                            <img src="assets/images/Information Circle.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <button class="creatArt">CREATE SUPER ARTICLE + AI</button>
+                    <p class="currentUse">Current Usage: <span></span> 0 / 5,000 words used.</p>
+
+
+                    <div class="realToggleActivated">
+                        <ul>
+                            <li>
+                                <div class="toggleActivatedInner activatedFirst">
+                                    <div class="activatedFirstLeft">
+                                        <h3>Intro</h3>
+                                        <p>Introduction</p>
+                                    </div>
+                                    <div class="activatedFirstRight">
+                                        <button>Edit</button>
+                                        <button>Delete</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toggleActivatedInner">
+                                    <h3>H2</h3>
+                                    <p>Historia del Turismo en Huesco</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toggleActivatedInner">
+                                    <h3>H2</h3>
+                                    <p>Destinos Principles en Huesca</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="toggleActivatedInner">
+                                            <h3>H3</h3>
+                                            <p>Parque Nacional de Ordesa y Monte Perdido</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="toggleActivatedInner">
+                                            <h3>H3</h3>
+                                            <p>El Castillo de Loarre</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="toggleActivatedInner">
+                                            <h3>H3</h3>
+                                            <p>Alquezar y la Sierra de Guara</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="toggleActivatedInner">
+                                    <h3>H2</h3>
+                                    <p>Actividadas Turisticas</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="toggleActivatedInner">
+                                            <h3>H3</h3>
+                                            <p>Senderismo ye Rutas de Montana</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="toggleActivatedInner">
+                                            <h3>H3</h3>
+                                            <p>Esqui Deportes de Invierno</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="toggleActivatedInner">
+                                            <h3>H3</h3>
+                                            <p>Gastronomia Oscense</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">Affiliates</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">API</a>
+                </li>
+                <li>
+                    <a href="#">Status</a>
+                </li>
+                <li>
+                    <a href="#">Free Tools</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <script src="assets/js/main.js"></script>
+
+
+
+
+
+
+    <script>
+        document.addEventListener('click', function (e) {
+            const allSelects = document.querySelectorAll('.custom-select');
+
+            allSelects.forEach(function (select) {
+                // Check if the clicked element is the current select or its children
+                if (select !== e.target && !select.contains(e.target)) {
+                    select.classList.remove('open');
+                }
+            });
+        });
+        const customSelects = document.querySelectorAll('.custom-select');
+        customSelects.forEach(function (select) {
+            select.addEventListener('click', function (e) {
+                e.stopPropagation();
+                customSelects.forEach(function (otherSelect) {
+                    if (otherSelect !== select) {
+                        otherSelect.classList.remove('open');
+                    }
+                });
+
+                this.classList.toggle('open');
+            });
+
+            const options = select.querySelectorAll('.select-option');
+            options.forEach(function (option) {
+                option.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    const value = this.dataset.value;
+                    const selectElement = select.querySelector('select');
+                    const styledSelect = select.querySelector('.select-styled');
+                    styledSelect.textContent = this.textContent;
+                    selectElement.value = value;
+                    select.classList.remove('open');
+                });
+            });
+        });
+
+
+
+        const allGpt = document.querySelectorAll(".singleGpt")
+        const writerBtns1 = document.querySelectorAll(".writerBtnWrap1 button")
+        const writerBtns2 = document.querySelectorAll(".writerBtnWrap2 button")
+        allGpt.forEach(item => {
+            item.addEventListener("click", () => {
+                allGpt.forEach(val => {
+                    val.classList.remove("active")
+                })
+                item.classList.add("active")
+            })
+        })
+        writerBtns1.forEach(item => {
+            item.addEventListener("click", () => {
+                writerBtns1.forEach(val => {
+                    val.classList.remove("active")
+                })
+                item.classList.add("active")
+            })
+        })
+        writerBtns2.forEach(item => {
+            item.addEventListener("click", () => {
+                writerBtns2.forEach(val => {
+                    val.classList.remove("active")
+                })
+                item.classList.add("active")
+            })
+        })
+
+
+
+
+        const isLight = JSON.parse(localStorage.getItem("isLight"))
+        const sidebar = document.querySelector("aside")
+        const modeSwitch = document.querySelector(".modeSwitch input")
+        const modeText = document.querySelector(".modeToggle p")
+
+        const body = document.querySelector("body")
+        const main = document.querySelector("main")
+
+
+        if (isLight) {
+            modeSwitch.checked = true
+            body.style = `background-color: #ECECEF`
+            modeText.classList.add("light")
+            modeText.innerText = "Light"
+            main.classList.add("light")
+            aside.classList.add("light")
+        } else {
+            body.style = `background-color: #1E1E2F`
+            modeText.classList.remove("light")
+            modeText.innerText = "Dark"
+            main.classList.remove("light")
+            aside.classList.remove("light")
+            modeSwitch.checked = false
+        }
+
+
+        modeSwitch.addEventListener("change", e => {
+            localStorage.setItem("isLight", JSON.stringify(modeSwitch.checked))
+            if (modeSwitch.checked) {
+                body.style = `background-color: #ECECEF`
+                modeText.classList.add("light")
+                modeText.innerText = "Light"
+                main.classList.add("light")
+                aside.classList.add("light")
+            } else {
+                body.style = `background-color: #1E1E2F`
+                modeText.classList.remove("light")
+                modeText.innerText = "Dark"
+                main.classList.remove("light")
+                aside.classList.remove("light")
+            }
+        })
+    </script>
+</body>
+
+</html>
