@@ -263,6 +263,45 @@
     <script src="assets/js/main.js"></script>
 
     <script>
+        document.addEventListener('click', function (e) {
+            const allSelects = document.querySelectorAll('.custom-select');
+
+            allSelects.forEach(function (select) {
+                // Check if the clicked element is the current select or its children
+                if (select !== e.target && !select.contains(e.target)) {
+                    select.classList.remove('open');
+                }
+            });
+        });
+        const customSelects = document.querySelectorAll('.custom-select');
+        customSelects.forEach(function (select) {
+            select.addEventListener('click', function (e) {
+                e.stopPropagation();
+                customSelects.forEach(function (otherSelect) {
+                    if (otherSelect !== select) {
+                        otherSelect.classList.remove('open');
+                    }
+                });
+
+                this.classList.toggle('open');
+            });
+
+            const options = select.querySelectorAll('.select-option');
+            options.forEach(function (option) {
+                option.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    const value = this.dataset.value;
+                    const selectElement = select.querySelector('select');
+                    const styledSelect = select.querySelector('.select-styled');
+                    styledSelect.textContent = this.textContent;
+                    selectElement.value = value;
+                    select.classList.remove('open');
+                });
+            });
+        });
+    </script>
+
+    <script>
         const isLight = JSON.parse(localStorage.getItem("isLight"))
         const sidebar = document.querySelector("aside")
         const modeSwitch = document.querySelector(".modeSwitch input")
@@ -278,13 +317,13 @@
             modeText.classList.add("light")
             modeText.innerText = "Light"
             main.classList.add("light")
-            aside.classList.add("light")
+            sidebar.classList.add("light")
         } else {
             body.style = `background-color: #1E1E2F`
             modeText.classList.remove("light")
             modeText.innerText = "Dark"
             main.classList.remove("light")
-            aside.classList.remove("light")
+            sidebar.classList.remove("light")
             modeSwitch.checked = false
         }
 
@@ -296,13 +335,13 @@
                 modeText.classList.add("light")
                 modeText.innerText = "Light"
                 main.classList.add("light")
-                aside.classList.add("light")
+                sidebar.classList.add("light")
             } else {
                 body.style = `background-color: #1E1E2F`
                 modeText.classList.remove("light")
                 modeText.innerText = "Dark"
                 main.classList.remove("light")
-                aside.classList.remove("light")
+                sidebar.classList.remove("light")
             }
         })
 

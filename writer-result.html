@@ -371,6 +371,11 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 
+
+
+
+
+
     <script>
         const isLight = JSON.parse(localStorage.getItem("isLight"))
         const sidebar = document.querySelector("aside")
@@ -387,13 +392,13 @@
             modeText.classList.add("light")
             modeText.innerText = "Light"
             main.classList.add("light")
-            aside.classList.add("light")
+            sidebar.classList.add("light")
         } else {
             body.style = `background-color: #1E1E2F`
             modeText.classList.remove("light")
             modeText.innerText = "Dark"
             main.classList.remove("light")
-            aside.classList.remove("light")
+            sidebar.classList.remove("light")
             modeSwitch.checked = false
         }
 
@@ -405,20 +410,18 @@
                 modeText.classList.add("light")
                 modeText.innerText = "Light"
                 main.classList.add("light")
-                aside.classList.add("light")
+                sidebar.classList.add("light")
             } else {
                 body.style = `background-color: #1E1E2F`
                 modeText.classList.remove("light")
                 modeText.innerText = "Dark"
                 main.classList.remove("light")
-                aside.classList.remove("light")
+                sidebar.classList.remove("light")
             }
         })
-    </script>
 
 
 
-    <script>
         tinymce.init({
             selector: '.mainEditor',
             plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
@@ -432,7 +435,7 @@
                 { value: 'Email', title: 'Email' },
             ],
             ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
-            content_style: "img.alignLeft { float: left; margin: 0 15px 15px 0; } img.alignRight { float: right; margin: 0 0 15px 15px; } h1,h2,h3 {color: #fff} p,small,li,a {color: #959CB6} h1,h2,h3 {width: 100%} img.alignLeft, img.alignRight {width: 350px;}",
+            content_style: `img.alignLeft { float: left; margin: 0 15px 15px 0; } img.alignRight { float: right; margin: 0 0 15px 15px; } h1,h2,h3 {color: ${isLight ? "#000" : "#fff"}} p,small,li,a {color: #959CB6} h1,h2,h3 {width: 100%} img.alignLeft, img.alignRight {width: 350px;}`,
         });
     </script>
 

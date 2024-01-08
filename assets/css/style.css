@@ -205,6 +205,19 @@ aside ul li ul li a:hover {
     background-color: hsl(0, 0%, 100%, 10%) !important;
 }
 
+
+aside.light ul li ul li.active a {
+    background-color: hsl(0, 0%, 29%, 10%) !important;
+}
+
+aside.light ul li ul li a:hover {
+    background-color: hsl(0, 0%, 29%, 10%) !important;
+}
+
+aside.light ul li ul li a {
+    color: #000 !important;
+}
+
 aside ul li ul li .moreImg {
     width: 20px;
     position: absolute;
@@ -334,6 +347,10 @@ footer ul li a {
     color: #fff;
 }
 
+.light .mainHeading span span {
+    color: #000;
+}
+
 .light .mainHeading {
     color: #87b5c1;
 }
@@ -381,6 +398,10 @@ footer ul li a {
     margin-top: 30px;
     text-align: center;
     margin-bottom: 15px;
+}
+
+.light .pageTitle h3 {
+    color: #000;
 }
 
 .pageTitle h3 img {
@@ -455,6 +476,10 @@ footer ul li a {
     font-size: 16px;
     color: #fff;
     margin-bottom: 60px;
+}
+
+.light .yourToolText {
+    color: #000;
 }
 
 .yourTool .chatInpWrap .chatInpMain {
@@ -2094,8 +2119,14 @@ footer ul li a {
 .chatTextWrap {
     width: 100%;
     padding: 0 15px;
+    position: relative;
 }
-
+.chatInpResWrap {
+    position: relative;
+}
+.chatInpResWrap .fa-bars {
+    top: -40px;
+}
 .chatTextWrap h2 {
     font-size: 20px;
     font-weight: 600;
@@ -2116,6 +2147,9 @@ footer ul li a {
     justify-content: space-between;
 }
 
+.light .chatTextWrap p {
+    color: #000000ba;
+}
 .chatTextWrap p .chatTextBtnWrap {
     display: flex;
     align-items: center;
@@ -2137,7 +2171,12 @@ footer ul li a {
     cursor: pointer;
     margin-right: 8px;
 }
-
+.light .chatTextWrap p .chatTextBtnWrap .textCopyBtn {
+    background-color: #000;
+}
+.light .chatTextWrap p .chatTextBtnWrap .textCopyBtn img {
+    filter: brightness(100);
+}
 .chatTextWrap p .textCopyBtn img {
     width: 20px;
 }
@@ -2158,12 +2197,19 @@ footer ul li a {
     border-bottom: 1px solid #767685;
 }
 
+.light .chatTextWrap table th {
+    color: #000;
+}
+
 .chatTextWrap table td {
     font-size: 18px;
     font-weight: 300;
     color: #eee;
     padding: 15px 0;
     border-bottom: 1px solid #4f4f61;
+}
+.light .chatTextWrap table td {
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .chatTextWrap table tbody tr:last-child td {
@@ -2181,6 +2227,10 @@ footer ul li a {
     font-weight: 300;
     line-height: 24px;
     margin-bottom: 15px;
+}
+
+.light .chatTextWrap ol li {
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .multiChatText {
@@ -2207,6 +2257,9 @@ footer ul li a {
     border: 1px solid #383c4c;
     margin-bottom: 15px;
 }
+.light .multiChatLeftSingle .multiChatMain {
+    background-color: hsl(0, 0%, 95%, 0.4) !important;
+}
 
 .multiChatLeftSingle .multiChatMain h3 {
     font-size: 18px;
@@ -2227,12 +2280,19 @@ footer ul li a {
     -webkit-box-orient: vertical;
     margin-bottom: 0;
 }
+.light .multiChatLeftSingle .multiChatMain p {
+    color: #000;
+}
 
 .multiChatLeftSingle .multiChatSub {
     background-color: #474956;
     padding: 10px;
     border-radius: 8px;
 }
+.light .multiChatLeftSingle .multiChatSub {
+    background-color: hsla(0, 0%, 83%, 0.4) !important;
+}
+
 
 .multiChatLeftSingle .multiChatSub p {
     font-size: 16px;
@@ -2266,6 +2326,13 @@ footer ul li a {
     justify-content: center;
     cursor: pointer;
     margin-right: 8px;
+}
+
+.light .multiChatText .chatTextBtnWrap .textCopyBtn {
+    background-color: #000;
+}
+.light .multiChatText .chatTextBtnWrap .textCopyBtn img {
+    filter: brightness(100);
 }
 
 .multiChatText .textCopyBtn img {
@@ -2327,6 +2394,9 @@ footer ul li a {
     margin-right: 8px;
 }
 
+.light .chatInpMain .stopChat span {
+    background-color: #dfdfe6;
+}
 .chatInpMain button {
     width: 39px;
     height: 36px;
@@ -2590,6 +2660,11 @@ footer ul li a {
     outline: none;
 }
 
+.light .writerItemWrap .writerInp input {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
 .writerItemWrap .writerInp input::placeholder {
     color: #959CB6;
 }
@@ -2763,6 +2838,11 @@ footer ul li a {
     color: #fff;
     font-size: 15px;
     margin-left: 10px;
+}
+.light .toggleActivatedInner.activatedFirst .activatedFirstRight button {
+    background-color: #fff;
+    border: 1px solid #1E1E2F;
+    color: #000;
 }
 
 
@@ -3055,6 +3135,11 @@ footer ul li a {
     background-color: #26283B !important;
     padding: 0 !important;
 }
+
+.light .resMainContent .tox-toolbar__primary {
+    background-color: #f4f4f4 !important;
+}
+
 .tox .tox-toolbar__group button {
     background-color: #fff !important;
 }
@@ -3092,8 +3177,9 @@ footer ul li a {
     margin-bottom: 25px;
 }
 
+
 .light .resMainContent h1 {
-    color: #000;
+    color: #000 !important;
 }
 
 .resMainContent h2 {
@@ -3104,7 +3190,7 @@ footer ul li a {
 }
 
 .light .resMainContent h2 {
-    color: #000;
+    color: #000 !important;
 }
 
 .resMainContent p {
@@ -3124,7 +3210,9 @@ footer ul li a {
     padding: 10px;
     background-color: #26283B;
 }
-
+.light .resMainRight {
+    background-color: #f4f4f4;
+}
 .resMainRight .resRightTitle {
     font-size: 17px;
     font-weight: 500;
@@ -3144,6 +3232,9 @@ footer ul li a {
     padding: 10px;
     margin-bottom: 10px;
 }
+.light .resRightBox {
+    background-color: #eaeaea;
+}
 
 .resRightBox p {
     font-size: 15px;
@@ -3159,6 +3250,9 @@ footer ul li a {
     border: none;
     background-color: #1E1E2F;
     color: #959CB6;
+}
+.light .resRightBoxWrap button {
+    background-color: #eaeaea;
 }
 
 
@@ -3201,6 +3295,7 @@ footer ul li a {
     display: block;
     width: 45%;
     padding-right: 5px;
+    word-break: break-all;
 }
 
 .resRightBoxWrap .resRightBox ul li span.ResRightBoxCount {
@@ -4535,7 +4630,8 @@ main.homeNewsMain::before {
     transform: rotate(-5deg);
 }
 
-.homeNewsBannerLine1, .homeNewsBannerLine3 {
+.homeNewsBannerLine1,
+.homeNewsBannerLine3 {
     width: 100%;
     height: 75px;
     background-color: #1f363c;
@@ -4726,6 +4822,7 @@ main.homeNewsMain::before {
     .homeNewsBannerText h1 {
         font-size: 40px;
     }
+
     .homeNewsFooter {
         padding: 30px;
     }
@@ -4758,6 +4855,7 @@ main.homeNewsMain::before {
     .homeNewsFooter .mainHeading img {
         width: 36px;
     }
+
     .homeNewsFooter p {
         font-size: 14px;
     }
@@ -4769,9 +4867,11 @@ main.homeNewsMain::before {
         align-items: center;
         justify-content: center;
     }
+
     .homeNewsFooter .mainHeading {
         margin-bottom: 15px;
     }
+
     .homeNewsFooter p {
         text-align: center;
     }
@@ -4996,6 +5096,7 @@ main.newsMain {
         font-size: 44px;
     }
 }
+
 @media (max-width: 1100px) {
     main.newsMain {
         padding: 30px !important;
@@ -5006,24 +5107,30 @@ main.newsMain {
     .newsHeading small {
         font-size: 14px;
     }
+
     .newsHeading h1 {
         font-size: 40px;
     }
+
     .newsHeading p {
         font-size: 15px;
     }
 
-    
+
     .newsContent .newsImg {
         height: 400px;
         padding: 0;
     }
-    .newsContentText p, .newsContentText ol li {
+
+    .newsContentText p,
+    .newsContentText ol li {
         font-size: 15px;
     }
+
     .newsContentText h2 {
         font-size: 20px;
     }
+
     .newsContentText h3 {
         font-size: 18px;
     }
@@ -5033,6 +5140,7 @@ main.newsMain {
     .newsContent .newsImg {
         height: 280px;
     }
+
     .newsContentText img {
         height: 250px;
     }
