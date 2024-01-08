@@ -195,33 +195,6 @@
 
 
     <script>
-        // JavaScript to handle the custom select functionality
-        document.addEventListener('click', function (e) {
-            const select = document.getElementById('customSelect');
-            if (!select.contains(e.target)) {
-                select.classList.remove('open');
-            }
-        });
-
-        document.getElementById('customSelect').addEventListener('click', function () {
-            this.classList.toggle('open');
-        });
-
-        const options = document.querySelectorAll('.select-option');
-        options.forEach(function (option) {
-            option.addEventListener('click', function (e) {
-                e.stopPropagation(); // Prevent the click event from propagating to the document
-                const value = this.dataset.value;
-                const select = document.querySelector('#customSelect select');
-                const styledSelect = document.querySelector('.select-styled');
-                styledSelect.textContent = this.textContent;
-                select.value = value;
-                document.getElementById('customSelect').classList.remove('open');
-            });
-        });
-
-
-
 
         const isLight = JSON.parse(localStorage.getItem("isLight"))
         const sidebar = document.querySelector("aside")
@@ -265,6 +238,21 @@
                 aside.classList.remove("light")
             }
         })
+
+
+
+        const moreImg = document.querySelector(".moreImg")
+        const chatMoreOpt = document.querySelector(".chatMoreOpt")
+        document.addEventListener("click", (e) => {
+            if (e.target === moreImg || e.target === chatMoreOpt) {
+                chatMoreOpt.classList.add("active");
+            } else {
+                chatMoreOpt.classList.remove("active");
+            }
+        })
+        // moreImg.addEventListener("click", () => {
+        //     chatMoreOpt.classList.add("active")
+        // })
     </script>
 
 </body>
