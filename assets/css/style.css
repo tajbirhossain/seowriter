@@ -3037,7 +3037,7 @@ footer ul li a {
 }
 
 .tox-tinymce {
-    border: 2px solid #626674 !important;
+    border: 2px solid transparent !important;
     border-radius: unset !important;
 }
 
@@ -3052,8 +3052,11 @@ footer ul li a {
 }
 
 .resMainContent .tox-toolbar__primary {
-    background-color: #626674 !important;
+    background-color: #26283B !important;
     padding: 0 !important;
+}
+.tox .tox-toolbar__group button {
+    background-color: #fff !important;
 }
 
 .tox .tox-tbtn__select-label {
@@ -4528,19 +4531,19 @@ main.homeNewsMain::before {
     width: calc(100vw + 200px);
     position: absolute;
     left: -60px;
-    top: 665px;
+    top: 615px;
     transform: rotate(-5deg);
 }
 
-.homeNewsBannerLine1 {
+.homeNewsBannerLine1, .homeNewsBannerLine3 {
     width: 100%;
-    height: 70px;
+    height: 75px;
     background-color: #1f363c;
 }
 
 .homeNewsBannerLine2 {
     width: 100%;
-    height: 70px;
+    height: 75px;
     background-color: #384454;
 }
 
