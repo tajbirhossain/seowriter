@@ -435,7 +435,7 @@
                 { value: 'Email', title: 'Email' },
             ],
             ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
-            content_style: `img.alignLeft { float: left; margin: 0 15px 15px 0; } img.alignRight { float: right; margin: 0 0 15px 15px; } h1,h2,h3 {color: ${isLight ? "#000" : "#fff"}} p,small,li,a {color: #959CB6} h1,h2,h3 {width: 100%} img.alignLeft, img.alignRight {width: 350px;}`,
+            content_style: `html::-webkit-scrollbar {display:none} img.alignLeft { float: left; margin: 0 15px 15px 0; } img.alignRight { float: right; margin: 0 0 15px 15px; } h1,h2,h3 {color: ${isLight ? "#000" : "#fff"}} p,small,li,a {color: #959CB6} h1,h2,h3 {width: 100%} img.alignLeft, img.alignRight {width: 350px;}`,
         });
     </script>
 

@@ -2345,6 +2345,7 @@ footer ul li a {
 
 .chatInpMain input {
     width: 100%;
+    max-width: 870px;
     height: 72px;
     border-radius: 11px;
     background-color: #27293D;
@@ -3115,6 +3116,8 @@ footer ul li a {
 .resMainLeft {
     width: calc(75%);
 }
+
+
 
 .tox-tinymce {
     border: 2px solid transparent !important;
